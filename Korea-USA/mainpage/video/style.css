@@ -1,0 +1,35 @@
+*{
+    background-color:#000000;
+}
+
+a{
+    list-style-type: none;
+    text-decoration: none;
+    color:white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+video { max-width: 80%; 
+    display: block; 
+    margin: 30px auto; }
+
+
+p{
+
+    color: white;
+    text-align: center;
+    font-size: .6rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+

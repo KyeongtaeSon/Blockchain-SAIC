@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    background-color:black;
+   
+}
+ 
+h1{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    margin:10px;
+}
+
+.korea{
+    text-align: center;
+    padding:50px;
+
+
+}
+
+.usa{
+    text-align: center;
+    padding:50px;
+   
+
+} 
+
+img{
+    height:300px;
+    position:relative;
+    border: solid black 3px;
+}
+
+p{
+    font-size:1.5em;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
