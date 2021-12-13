@@ -52,7 +52,7 @@ async function main() {
 
 
     // show alert messages (or don't...)
-    errorMessage = false; // SET THIS TO 'false' TO BLOCK THE ALERT MESSAGES
+    errorMessage = true; // SET THIS TO 'false' TO BLOCK THE ALERT MESSAGES
     if(errorMessage == true) {
       alerts();
     }
