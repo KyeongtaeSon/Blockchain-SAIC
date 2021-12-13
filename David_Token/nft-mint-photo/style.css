@@ -2,6 +2,19 @@
 
 body {
     font-family: Arial;
+    
+}
+h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    margin:3rem;
+}
+p{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(122, 164, 255);
+    border: 1px solid blue;
 }
 
 .gallery {
@@ -28,6 +41,7 @@ body {
 }
 
 .gallery img:hover {
-    outline: 4px solid blue;
+    /* outline: 4px solid blue; */
+    opacity: .5;
     cursor: pointer;
 }
