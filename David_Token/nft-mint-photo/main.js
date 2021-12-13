@@ -1,4 +1,6 @@
 ////// ETHEREUM SETUP //////
+
+
 ethereum.autoRefreshOnNetworkChange = false;
 window.ethereum.enable();
 const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -32,27 +34,8 @@ async function main() {
    
     // extract the filepath of the image that was clicked (img src)
     // e.g. https://yourusername.github.io/photo-project/img/1.jpg
-    let imageLinks = ["https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/1.JPG",
-     "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/1.JPG",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/2.JPG",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/3.jpg",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/4.JPG",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/5.jpg",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/6.jpg",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/7.jpg",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/8.jpg",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/9.jpg",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/10.jpg",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/11.jpg",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/12.jpg",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/13.jpg",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/14.jpg",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/15.JPG",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/16.jpg",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/18.jpg",
-    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/29.jpg",
-    ]
 
+    
 
 
     const imgFilePath = $(this)[0].src;
