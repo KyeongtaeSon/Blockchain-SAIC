@@ -31,7 +31,7 @@ contract DavidSobToken is ERC721URIStorage {
     string private TOKEN_NAME = "DavidSonToken";    // 1. Change this to the name of your NFT series
     string private TOKEN_SYMBOL = "DST";  // 2. Change this to your NFT symbol (3-5 characters)
 
-    constructor() ERC721(DavidSonToken, DST) {}
+    constructor() ERC721(TOKEN_NAME, TOKEN_SYMBOL) {}
 
     function mintPhoto(string memory tokenURI) public returns (uint256) {
         

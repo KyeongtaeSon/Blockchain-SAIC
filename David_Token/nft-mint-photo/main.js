@@ -1,13 +1,37 @@
 ////// ETHEREUM SETUP //////
 
 
+// let imageLinks = ["https://kyeongtaeson.github.io/David_SAIC/David_Token/img/1.JPG",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/2.JPG",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/3.jpg",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/4.JPG",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/5.jpg",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/6.jpg",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/7.jpg",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/8.jpg",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/9.jpg",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/10.jpg",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/11.jpg",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/12.jpg",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/13.jpg",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/14.jpg",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/15.JPG",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/16.jpg",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/17.JPG",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/18.jpg",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/19.jpg",
+// "https://kyeongtaeson.github.io/David_SAIC/David_Token/img/20.jpg"
+// ]
+
 ethereum.autoRefreshOnNetworkChange = false;
 window.ethereum.enable();
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 const signer = provider.getSigner();
 
 // swap this address out with the contract address for your token (found in Remix after deploying)
-const contractAddress = "0xbF19BD48A9a2F7f4f5e091dfAcff488244c6F526";
+const contractAddress = "0x831593BA2b170a5e5a1BEBEeA36ba6Cc6D81A5E4";
+
+
 const contractABI = [
     "function balanceOf(address account) public view returns (uint256)",
     "function tokenOfOwnerByIndex(address owner, uint256 index) public view returns (uint256)",
