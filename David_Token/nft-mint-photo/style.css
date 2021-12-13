@@ -1,0 +1,33 @@
+* {box-sizing: border-box;}
+
+body {
+    font-family: Arial;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+}
+
+@media (min-width: 500px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        gap: .5rem;
+    }
+}
+
+
+
+.gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.gallery img:hover {
+    outline: 4px solid blue;
+    cursor: pointer;
+}
