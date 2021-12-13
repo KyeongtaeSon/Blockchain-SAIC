@@ -5,7 +5,7 @@ const provider = new ethers.providers.Web3Provider(window.ethereum);
 const signer = provider.getSigner();
 
 // swap this address out with the contract address for your token (found in Remix after deploying)
-const contractAddress = "0x7EF2e0048f5bAeDe046f6BF797943daF4ED8CB47";
+const contractAddress = "0xbF19BD48A9a2F7f4f5e091dfAcff488244c6F526";
 const contractABI = [
     "function balanceOf(address account) public view returns (uint256)",
     "function tokenOfOwnerByIndex(address owner, uint256 index) public view returns (uint256)",
@@ -29,9 +29,32 @@ async function main() {
 
   // when the user clicks on an image in the gallery...
   $('.gallery img').click(function() {
-
+   
     // extract the filepath of the image that was clicked (img src)
     // e.g. https://yourusername.github.io/photo-project/img/1.jpg
+    let imageLinks = ["https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/1.JPG",
+     "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/1.JPG",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/2.JPG",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/3.jpg",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/4.JPG",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/5.jpg",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/6.jpg",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/7.jpg",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/8.jpg",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/9.jpg",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/10.jpg",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/11.jpg",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/12.jpg",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/13.jpg",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/14.jpg",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/15.JPG",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/16.jpg",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/18.jpg",
+    "https://kyeongtaeson.github.io/Blockchain-SAIC/David_Token/nft-mint-photo/img/29.jpg",
+    ]
+
+
+
     const imgFilePath = $(this)[0].src;
 
     // split the filepath based on "/"
@@ -46,7 +69,7 @@ async function main() {
 
 
     // show alert messages (or don't...)
-    errorMessage = true; // SET THIS TO 'false' TO BLOCK THE ALERT MESSAGES
+    errorMessage = false; // SET THIS TO 'false' TO BLOCK THE ALERT MESSAGES
     if(errorMessage == true) {
       alerts();
     }
